@@ -2,7 +2,7 @@
 'use strict';
 
 const { PDFDocument } = PDFLib;
-const MAX_FILES = 5;
+const MAX_FILES = 10;
 
 const dropArea = document.getElementById('dropArea');
 const fileInput = document.getElementById('fileInput');

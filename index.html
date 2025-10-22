@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PDF Merge — Cozy & Catchy UI</title>
+  <title>Merge PDFs</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +19,12 @@
       <div class="logo">PDF</div>
       <div>
         <h1>PDF Merge — Slick & Fast</h1>
-        <p class="lead">Drag & drop up to <strong>5 PDF files</strong>, reorder them and merge — everything in your browser. No upload.</p>
+        <p class="lead">Drag & drop up to <strong>10 PDF files</strong>, reorder them and merge — everything in your browser. No upload.</p>
       </div>
     </header>
 
     <div class="grid" style="margin-top:18px">
-      <section>
+      <section class="left-column">
         <div id="dropArea" class="drop" tabindex="0">
           <div class="big">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,11 +39,14 @@
           </div>
 
           <input id="fileInput" type="file" accept="application/pdf" multiple style="display:none">
-          <div class="hint">Files are processed locally. No upload. Max 5 files.</div>
+          <div class="hint">Files are processed locally. No upload. Max 10 files.</div>
         </div>
 
-        <div class="file-list" id="fileList" aria-live="polite" style="margin-top:12px">
-          <!-- file items inserted here -->
+        <!-- FILE LIST: now scrollable with a max-height so layout doesn't break -->
+        <div class="file-list-container">
+          <div class="file-list" id="fileList" aria-live="polite">
+            <!-- file items inserted here -->
+          </div>
         </div>
       </section>
 
